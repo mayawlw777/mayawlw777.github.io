@@ -1,0 +1,43 @@
+td	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+select	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+li 	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+input	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+textarea{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.text   {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+}
+
+.big	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+.middle {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 13px;
+}
+.small  {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 9px;
+}
+
