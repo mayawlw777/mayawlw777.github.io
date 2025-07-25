@@ -1,0 +1,489 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<!-- #bbinclude "header.pl" #section#="games" #pagetitle#="Arthur: Baby Kate Stickers"-->
+<html>
+<head>
+	<TITLE>PBS Kids: Arthur: Baby Kate Stickers</title>
+
+
+	<link rel="stylesheet" type="text/css" href="https://mayawlw777.github.io/arthur/arthur.css"> 
+
+
+<script language="JavaScript">
+
+<!-- Image Rollover Script
+
+// intialize array variables to hold rollover state
+var current_over_array		= new Array("","","");
+var last_over_array			= new Array("","","");
+var stay_on_array			= new Array("games","","");
+
+// construct new rollover_item
+function rollover_item (img_name,whichSection,width,height) {
+	if (document.images) {
+		// set up image src's
+		if (whichSection == 0) {
+			img_prefix = "../../images/lnav/nav_" + img_name;
+		} else {
+			if (whichSection == 1) {
+				img_prefix = "../../games/images/subnav/" + img_name;
+			} else {
+				img_prefix = "../../games/images/rollovers/" + img_name;
+			}
+		}	
+		if (img_name == stay_on_array[whichSection]) {
+			this.img_off = new Image (width,height);
+			this.img_off.src = img_prefix + "_hit.gif";
+			this.img_on = new Image (width,height);
+			this.img_on.src = img_prefix + "_hit.gif";
+		} else {
+			this.img_off = new Image (width,height);
+			this.img_off.src = img_prefix + ".gif";
+			this.img_on = new Image (width,height);
+			this.img_on.src = img_prefix + "_roll.gif";
+		}
+
+		// set whichSection
+		this.whichSection = whichSection;
+	}
+}
+
+// new rollover_item
+function new_rollover_item (img_name,whichSection,width,height) {
+    rollover_item [img_name] = new rollover_item (img_name,whichSection,width,height);
+}
+
+// rollover image
+function rollover_mouseover (itemID) {
+	// get theSection
+	var theSection = rollover_item[itemID].whichSection;
+	
+	// rolled over image, swap in rollover state
+    current_over_array[theSection] = itemID;
+    if (current_over_array[theSection] != last_over_array[theSection]) {
+		document [current_over_array[theSection]].src = rollover_item [current_over_array[theSection]].img_on.src;
+		if (last_over_array[theSection] != "") {
+		        document.images [last_over_array[theSection]].src = rollover_item [last_over_array[theSection]].img_off.src;
+		}
+		last_over_array[theSection] = current_over_array[theSection];
+    }
+}
+
+// roll off image
+function rollover_mouseout (itemID) {
+	// get theSection
+	var theSection = rollover_item[itemID].whichSection;
+
+	// rolled off image, swap out rollover state
+	if (current_over_array[theSection] != "") {
+	    document.images [current_over_array[theSection]].src = rollover_item [current_over_array[theSection]].img_off.src;
+	}
+	current_over_array[theSection] = "";
+	last_over_array[theSection] = "";
+}
+      
+
+new_rollover_item ("home",0,72,68);
+new_rollover_item ("friends",0,72,74);
+new_rollover_item ("games",0,72,67);
+new_rollover_item ("print",0,72,68);
+new_rollover_item ("find",0,72,66);
+new_rollover_item ("grownups",0,72,22);
+//-->
+
+<!-- Games Subnav Rollover Items
+
+// games subnav items
+new_rollover_item ("play",1,80,87);
+new_rollover_item ("art_and_music",1,80,87);
+new_rollover_item ("downloads",1,80,87);
+
+//-->
+	
+</script>
+
+
+</head>
+
+<body bgcolor="#FFFFFF" link="#000099" alink="#FF0000" vlink="#990099" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" background="../../images/backgrounds/games_background.gif" onload="loadStickers();">
+	
+<table cellspacing="0" cellpadding="0" border="0" valign="top" align="left" width="730">
+<tr>
+
+	<td width="87" align="left" valign="top">
+		<table cellspacing="0" cellpadding="0" border="0" valign="top" align="left" width="87">
+		<tr>
+			<td width="87" height="1"><a href="#skipnav"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="1" height="1" alt="Skip Navigation" border="0"></a></td>
+		</tr>
+		<tr>
+			<td width="87" height="71" align="center"><a href="https://mayawlw777.github.io/index.html"><img src="https://mayawlw777.github.io/arthur/images/lnav/nav_pbskids.gif" width="72" height="71" border="0" alt="PBS Kids"></a></td>
+		</tr>
+
+		<tr>
+			<td width="87" height="68" align="center"><a href="../../index.html" onmouseover="if (document.images) {rollover_mouseover ('home')}; window.status = 'Home'; return true;" onmouseout="if (document.images) {rollover_mouseout ('home')}; window.status = ''; return true;"><img src="https://mayawlw777.github.io/arthur/images/lnav/nav_home.gif" width="72" height="68" name="home" border="0" alt="Home"></a></td>
+		</tr>
+	
+		<tr>
+			<td width="87" height="74" align="center"><a href="../../friends/index.html" onmouseover="if (document.images) {rollover_mouseover ('friends')}; window.status = 'Friends'; return true;" onmouseout="if (document.images) {rollover_mouseout ('friends')}; window.status = ''; return true;"><img src="https://mayawlw777.github.io/arthur/images/lnav/nav_friends.gif" width="72" height="74" name="friends" border="0" alt="Friends"></a></td>
+		</tr>
+	
+		<tr>
+			<td width="87" height="67" align="center"><a href="../../games/index.html" onmouseover="window.status = 'Games'; return true;" onmouseout="window.status = ''; return true;"><img src="https://mayawlw777.github.io/arthur/images/lnav/nav_games_hit.gif" width="72" height="67" name="games" border="0" alt="Games"></a></td>
+		</tr>
+	
+		<tr>
+			<td width="87" height="68" align="center"><a href="../../print/index.html" onmouseover="if (document.images) {rollover_mouseover ('print')}; window.status = 'Print'; return true;" onmouseout="if (document.images) {rollover_mouseout ('print')}; window.status = ''; return true;"><img src="https://mayawlw777.github.io/arthur/images/lnav/nav_print.gif" width="72" height="68" name="print" border="0" alt="Print"></a></td>
+		</tr>
+	
+		<tr>
+			<td width="87" height="66" align="center"><a href="../../find/index.html" onmouseover="if (document.images) {rollover_mouseover ('find')}; window.status = 'Find'; return true;" onmouseout="if (document.images) {rollover_mouseout ('find')}; window.status = ''; return true;"><img src="https://mayawlw777.github.io/arthur/images/lnav/nav_find.gif" width="72" height="66" name="find" border="0" alt="Find"></a></td>
+		</tr>
+	
+		<tr>
+			<td width="87" height="22" align="center"><a href="../../grownups/index.html" onmouseover="if (document.images) {rollover_mouseover ('grownups')}; window.status = 'Grownups'; return true;" onmouseout="if (document.images) {rollover_mouseout ('grownups')}; window.status = ''; return true;"><img src="https://mayawlw777.github.io/arthur/images/lnav/nav_grownups.gif" width="72" height="22" name="grownups" border="0" alt="Grown-Ups"></a></td>
+		</tr>
+	
+		<tr>
+			<td width="87" height="1"><a name="skipnav"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="1" height="1" alt=" "></a></td>
+		</tr>
+		</table>
+	</td>
+
+	<td width="643" align="left" valign="top">
+<!-- end bbinclude -->
+
+<!-- Game Content Table Starts Here -->
+<!-- #bbinclude "::games:(includes):games_content_header.incl" #background_color#="#FFFFFF" #corner_image#="window_corner_white.gif" -->
+<table cellspacing="0" cellpadding="0" border="0" width="643">
+<!-- background strip -->
+<tr>
+	<td height="1" width="643"><a name="top">&nbsp;</a></td>
+</tr>
+<!-- top of content box -->
+<tr>
+	<td>
+		<table border="0" width="643" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td width="622" height="6" bgcolor="#66CCCC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="1" height="1" alt=" "></td>
+			<td rowspan="2" width="21" align="left" valign="top" height="20"><img src="https://mayawlw777.github.io/arthur/games/images/window_corner_white.gif" width="21" height="20" hspace="0" vspace="0" border="0" align="left" alt=" "></td>
+		</tr>
+		<tr>
+			<td width="622" height="14" bgcolor="#FFFFFF" align="center"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="10" height="14" alt=" "></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<!-- content -->
+<tr>
+	<td bgcolor="#FFFFFF">
+		<table border="0" width="643" cellspacing="0" cellpadding="0" align="left">
+		<tr>
+			<td align="center" valign="top" bgcolor="#FFFFFF">&nbsp;
+			<!-- game content starts here -->
+<!-- end bbinclude -->
+
+				<script language="JavaScript">
+				<!-- Image Rollover Script
+				
+				// Init vars
+				var lowerRange = 1;
+				var upperRange = 51;
+				var numItems = 4;
+				var currSticker = 0;
+				var itemNumArray = new Array(numItems);
+				var itemNumCounter, newItemNum;
+				var itemNumFound;
+				
+				
+				// ----------------------------------------
+				//         GET RANDOM STICKERS NUMS
+				// ----------------------------------------
+				
+				// select itemNums for the stickers
+				for (itemNumCounter = 0; itemNumCounter < numItems; itemNumCounter++) {
+					// init itemNumFound
+					itemNumFound = false;
+				
+					// randomly select an itemNum
+					newItemNum = Math.round(Math.random() * (upperRange - lowerRange)) + lowerRange;
+					
+					// make sure item not already chosen
+					while(!(itemNumFound)) {
+						// check if number already chosen
+						if (isElt(itemNumArray, newItemNum)) {
+							// taken, try adding 1
+							newItemNum = (newItemNum + 1);
+							
+							// make sure not beyond range
+							if (newItemNum > upperRange) {
+								// set to lowest 
+								newItemNum = lowerRange;
+							}
+						} else {
+							itemNumFound = true;
+						}
+					}
+				
+					// add item to array
+					itemNumArray[itemNumCounter] = newItemNum;
+				}
+				
+				
+				// ----------------------------------------
+				//             STICKER ITEMS
+				// ----------------------------------------
+				
+				// create sticker_item
+				function sticker_item (itemID,itemNum,width,height) {
+					if (document.images) {
+						this.itemNum = itemNumArray[itemNum].toString();
+						img_prefix = "images/stickers/sticker" + this.itemNum;
+						this.sticker_off = new Image (width,height);
+						this.sticker_off.src = "../../images/1px.gif";
+						this.sticker_on = new Image (width,height);
+						this.sticker_on.src = img_prefix + ".gif";
+					}
+				}
+				
+				// set sticker item to new sticker_item
+				function new_sticker_item (itemID,itemNum,width,height) {
+					sticker_item [itemID] = new sticker_item (itemID,itemNum,width,height);
+				}
+				
+				// add sticker
+				function sticker_add (itemID) {
+					if (document.images) {
+						// update chosen sticker and the hidden field
+						document.images ["sticker" + currSticker + "chosen"].src = sticker_item [itemID].sticker_on.src;
+						document.bkfanmail["sticker" + currSticker + "selected"].value = sticker_item [itemID].itemNum;
+				
+						// update currSticker
+						currSticker = (currSticker + 1) % numItems;
+					}
+				}
+				
+				// remove sticker
+				function sticker_remove (itemID) {
+					if (document.images) {
+						document.images [itemID + "chosen"].src = sticker_item [itemID].sticker_off.src;
+						document.bkfanmail[itemID + "selected"].value = "NULL";
+					}
+				}
+					  
+				// load the stickers
+				function loadStickers () {
+					var i; 
+					
+					if (document.images) {
+						for (i = 0; i < numItems; i++) {
+							document.images ["sticker" + i.toString()].src = sticker_item ["sticker" + i.toString()].sticker_on.src;
+						}
+					}
+				}
+				
+				// create stickers for page
+				new_sticker_item ("sticker0",0,131,106);
+				new_sticker_item ("sticker1",1,131,106);
+				new_sticker_item ("sticker2",2,131,106);
+				new_sticker_item ("sticker3",3,131,106);
+				
+				
+				
+				// ----------------------------------------
+				//            UTILITY FUNCTIONS
+				// ----------------------------------------
+				
+				// check if value is an element an array
+				function isElt(theArray, theElt) {
+					var index;
+					var found = false;
+					
+					// for each element of the array
+					for (index = 0; index < theArray.length; index++) {
+						// check if elt is equal
+						if (theArray[index] == theElt) {
+							// found elt
+							found = true;
+							break;
+						}
+					}
+					
+					// return found
+					return found;
+				}
+				
+				//-->
+				</script>
+				<FORM ACTION="/cgi-registry/arthur/stickers.cgi" method="post" name="bkfanmail">
+				<table border="0" width="625" cellspacing="0" cellpadding="0" align="left">
+				<tr>
+					<td>
+						<table border="0" width="625" cellspacing="0" cellpadding="0" align="left">
+						<tr>
+							<td width="625" colspan="5" align="center" bgcolor="#FFFFFF"><img src="https://mayawlw777.github.io/arthur/games/stickers/images/stickers_header.gif" width="601" height="82"></td>
+						</tr>
+						<tr>
+							<td width="11" bgcolor="#FFFFFF"><a name="stickertop"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="11" height="73"></a></td>
+							<td width="293" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/games/stickers/images/to_kate_top_left.gif" width="293" height="73"></td>
+							<td width="17" bgcolor="#FFFFFF"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="17" height="73"></td>
+							<td width="293" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/games/stickers/images/to_kate_top_right.gif" width="293" height="73"></td>
+							<td width="11" bgcolor="#FFFFFF"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="11" height="73"></td>
+						</tr>
+						</table>		
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" width="625" cellspacing="0" cellpadding="0" align="left">
+						<tr>
+							<td width="11" bgcolor="#FFFFFF"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="11" height="106"></td>
+							<td width="10" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="10" height="106"></td>
+							<td width="131" height="106" bgcolor="#FF99CC"><A HREF="#stickertop" onclick="sticker_add('sticker0');"><IMG SRC="https://mayawlw777.github.io/arthur/images/1px.gif" width="131" height="106" name="sticker0" border="0"></A></td>
+							<td width="11" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="11" height="106"></td>
+							<td width="131" height="106" bgcolor="#FF99CC"><A HREF="#stickertop" onclick="sticker_add('sticker1');"><IMG SRC="https://mayawlw777.github.io/arthur/images/1px.gif" width="131" height="106" name="sticker1" border="0"></A></td>
+							<td width="10" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="10" height="106"></td>
+							<td width="17" bgcolor="#FFFFFF"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="17" height="106"></td>
+							<td width="10" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="10" height="106"></td>
+							<td width="131" height="106" bgcolor="#FF99CC"><A HREF="#stickertop" onclick="sticker_remove('sticker0');"><IMG SRC="https://mayawlw777.github.io/arthur/images/1px.gif" width="131" height="106" name="sticker0chosen" border="0"></A><INPUT TYPE="hidden" VALUE="NULL" NAME="sticker0selected"></td>
+							<td width="11" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="11" height="106"></td>
+							<td width="131" height="106" bgcolor="#FF99CC"><A HREF="#stickertop" onclick="sticker_remove('sticker1');"><IMG SRC="https://mayawlw777.github.io/arthur/images/1px.gif" width="131" height="106" name="sticker1chosen" border="0"></A><INPUT TYPE="hidden" VALUE="NULL" NAME="sticker1selected"></td>
+							<td width="10" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="10" height="106"></td>
+							<td width="11" bgcolor="#FFFFFF"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="11" height="106"></td>
+						</tr>
+						<tr>
+							<td width="11" bgcolor="#FFFFFF"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="11" height="106"></td>
+							<td width="10" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="10" height="106"></td>
+							<td width="131" height="106" bgcolor="#FF99CC"><A HREF="#stickertop" onclick="sticker_add('sticker2');"><IMG SRC="https://mayawlw777.github.io/arthur/images/1px.gif" width="131" height="106" name="sticker2" border="0"></A></td>
+							<td width="11" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="11" height="106"></td>
+							<td width="131" height="106" bgcolor="#FF99CC"><A HREF="#stickertop" onclick="sticker_add('sticker3');"><IMG SRC="https://mayawlw777.github.io/arthur/images/1px.gif" width="131" height="106" name="sticker3" border="0"></A></td>
+							<td width="10" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="10" height="106"></td>
+							<td width="17" bgcolor="#FFFFFF"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="17" height="106"></td>
+							<td width="10" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="10" height="106"></td>
+							<td width="131" height="106" bgcolor="#FF99CC"><A HREF="#stickertop" onclick="sticker_remove('sticker2');"><IMG SRC="https://mayawlw777.github.io/arthur/images/1px.gif" width="131" height="106" name="sticker2chosen" border="0"></A><INPUT TYPE="hidden" VALUE="NULL" NAME="sticker2selected"></td>
+							<td width="11" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="11" height="106"></td>
+							<td width="131" height="106" bgcolor="#FF99CC"><A HREF="#stickertop" onclick="sticker_remove('sticker3');"><IMG SRC="https://mayawlw777.github.io/arthur/images/1px.gif" width="131" height="106" name="sticker3chosen" border="0"></A><INPUT TYPE="hidden" VALUE="NULL" NAME="sticker3selected"></td>
+							<td width="10" bgcolor="#FF99CC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="10" height="106"></td>
+							<td width="11" bgcolor="#FFFFFF"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="11" height="106"></td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" width="625" cellspacing="0" cellpadding="0" align="left">
+						<tr>
+							<td width="11" height="54" bgcolor="#FFFFFF" rowspan="2"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="11" height="54"></td>
+							<td width="293" height="54" rowspan="2" valign="top"><img src="https://mayawlw777.github.io/arthur/games/stickers/images/to_kate_bottom_left.gif" width="293" height="54"></td>
+							<td width="17" height="54" bgcolor="#FFFFFF" rowspan="2"><img src="../../images/1px.gif" width="17" height="54"></td>
+							<td width="73" height="54" rowspan="2" valign="top"><img src="https://mayawlw777.github.io/arthur/games/stickers/images/to_kate_from.gif" width="73" height="54"></td>
+							<td width="139" height="36" bgcolor="#FF99CC" align="center"><input type="text" name="from" maxlength="20" size="10"></td>
+							<td width="81" height="54" rowspan="2" valign="top"><input type="image" src="https://mayawlw777.github.io/arthur/games/stickers/images/to_kate_send.gif" width="81" height="54" border="0"></td>
+							<td width="11" height="54" bgcolor="#FFFFFF" rowspan="2"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="11" height="54"></td>
+						</tr>
+						<tr>
+							<td width="139" height="18">
+								<img src="https://mayawlw777.github.io/arthur/games/stickers/images/to_kate_bottom_right.gif" width="139" height="18">
+								<input type="hidden" name="featurepath" value="ttps://mayawlw777.github.io/arthur/games/stickers/">
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+				</FORM>
+
+<!-- #bbinclude "::games:(includes):games_content_footer.incl" #teaser_URL#="../../friends/baby_kate/" #teaser_image#="morewithbabykate.gif" #teaser_alt#="More with Baby Kate" #background_color#="#FFFFFF" -->
+			<!-- game content ends here -->
+			</td>
+			<td width="6" bgcolor="#66CCCC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="6" alt=" "></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<!-- navigation -->
+<tr>
+	<td>
+		<table border="0" width="643" cellspacing="0" cellpadding="0" align="left">
+		<tr>
+			<td bgcolor="#FFFFFF" valign="bottom" align="center" width="508">
+				<br><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="508" height="15" alt=" ">
+			</td>
+			<td bgcolor="#FFFFFF" valign="bottom" align="right" width="129" height="145"><a href="../../friends/baby_kate/"><img src="https://mayawlw777.github.io/arthur/games/images/teasers/morewithbabykate.gif" width="129" height="135" border="0" align="right" alt="More with Baby Kate" hspace="0" vspace="0"></a></td>
+			<td width="6" height="145"><img src="https://mayawlw777.github.io/arthur/games/images/teaser_button_right.gif" width="6" height="145" alt=" "></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<!-- bottom of content box -->
+<tr>
+	<td>
+		<table border="0" width="643" cellspacing="0" cellpadding="0" align="left">
+		<tr>
+			<td width="508" height="1" bgcolor="#66CCCC"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="508" height="6" border="0" alt=" "></td>
+			<td width="135" height="6"><img src="https://mayawlw777.github.io/arthur/games/images/teaser_button_bottom.gif" width="135" height="6" border="0" alt=" "></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<!-- end bbinclude -->
+<!-- Game Content Table Ends Here -->
+
+
+<!-- #bbinclude "footer.pl" #section#="games" -->
+		<table cellspacing="0" cellpadding="0" border="0" width="643">
+		<tr>
+			<td width="15" height="30"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="15" height="30" alt=" "></td>
+			<td width="20" height="30"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="20" height="30" alt=" "></td>
+			<td width="573" height="30"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="573" height="30" alt=" "></td>
+			<td width="20" height="30"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="20" height="30" alt=" "></td>
+			<td width="15" height="30"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="15" height="30" alt=" "></td>
+		</tr>
+		<tr>
+			<td width="15"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="15" height="1" alt=" "></td>
+			<td width="20" height="127"><img src="https://mayawlw777.github.io/arthur/images/footers/games_left.gif" width="20" height="127" alt=" "></td>
+			<td width="573" bgcolor="#CC99CC" align="center">
+				<table cellspacing="0" cellpadding="0" border="0" width="573" bgcolor="#CC99CC">
+				<tr>
+					<td align="center" height="5"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" height="5" border="0" alt=" "></td>
+				</tr>
+				<tr>
+					<td align="center"><a href="https://mayawlw777.github.io/arthur/index.html">Home</a> / <a href="https://mayawlw777.github.io/arthur/friends/index.html">Friends</a> / <a href="https://mayawlw777.github.io/arthur/games/index.html">Games</a> / <a href="https://mayawlw777.github.io/arthur/print/index.html">Print</a> / <a href="https://mayawlw777.github.io/arthur/find/index.html">Find</a> / <a href="https://mayawlw777.github.io/arthur/grownups/index.html">Grown-Ups</a></td>
+				</tr>
+				<tr>
+					<td align="center" height="5"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" height="5" border="0" alt=" "></td>
+				</tr>
+				<tr>
+					<td align="center"><a href="../../grownups/help/">Need Help?</a></td>
+				</tr>
+				<tr>
+					<td align="center" height="20"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" height="20" border="0" alt=" "></td>
+				</tr>
+				<tr>
+					<td align="center">
+						<span class="copyright">All characters and underlying materials (including artwork) &copy; Marc Brown.<br>
+						&quot;Arthur&quot; and &quot;D.W.&quot; and all of the ARTHUR characters are trademarks of Marc Brown.<br>
+						<a href="../../grownups/copyright/index.html">&copy; 2001 WGBH</a></span>
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" height="5"></td>
+				</tr>
+				</table>
+			</td>
+			<td width="20" height="127"><img src="https://mayawlw777.github.io/arthur/images/footers/games_right.gif" width="20" height="127" alt=" "></td>
+			<td width="15"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="15" height="1" alt=" "></td>
+		</tr>
+		<tr>
+			<td width="15" height="10"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="15" height="10" alt=" "></td>
+			<td width="20" height="10"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="20" height="10" alt=" "></td>
+			<td width="573" height="10"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="573" height="10" alt=" "></td>
+			<td width="20" height="10"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="20" height="10" alt=" "></td>
+			<td width="15" height="10"><img src="https://mayawlw777.github.io/arthur/images/1px.gif" width="15" height="10" alt=" "></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</body>
+</html>
+<!-- end bbinclude -->
